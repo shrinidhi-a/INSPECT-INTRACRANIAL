@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - Brain Tumor Detection</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='files/styleAboutUs.css') }}" />
+  <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+</head>
+<body>
+    <header>
+		<h1>Brain Tumor Detection and Classification</h1>
+		<nav>
+			<ul>
+				<li><a href="{{ url_for('index') }}">Home</a></li>
+			</ul>
+		</nav>
+	</header>
+
+  <div class="about">
+    <h1 class="as" >About Us</h1>
+    <div class="card-container">
+      <div class="card">
+        <img src="{{ url_for('static', filename='files/Shravan.jpg') }}" alt="Shravan J P"  width="150" height="150">
+        <h3>Shravan J P</h3>
+        <p>A Final year Computer Science Student</p>
+        <p>Mangalore Institure if Technology and Engineering</p>
+        <p>Role : Developer </p>
+        <a href="#" class="btn">Contact</a>
+      </div>
+
+      <div class="card">
+        <img src="{{ url_for('static', filename='files/shri.jpg') }}" alt="Shrinidhi A" width="150" height="150">
+        <h3>Shrinidhi A</h3>
+        <p>A Final year Computer Science Student</p>
+        <p>Mangalore Institure if Technology and Engineering</p>
+        <p>Role : Developer </p>
+        <a href="https://shrinidhi.co.in" class="btn" target="_blank">Contact</a>
+      </div>
+
+      <div class="card">
+        <img src="{{ url_for('static', filename='files/vishwa.jpg') }}" alt="Vishwanath R" width="150" height="150">
+        <h3>Vishwanath R</h3>
+        <p>A Final year Computer Science Student</p>
+        <p>Mangalore Institure if Technology and Engineering</p>
+        <p>Role : Developer </p>
+        <a href="#" class="btn">Contact</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

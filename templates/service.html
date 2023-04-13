@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Brain Tumor Detection and Clasiification</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='files/styles.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='files/stylesec.css') }}" />
+  <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+</head>
+<body>
+	<header>
+		<h1>Brain Tumor Detection and Clasiification</h1>
+		<nav>
+			<ul>
+				<li><a href="{{ url_for('index') }}" >Home</a></li>
+        <li><a href="{{ url_for('aboutus') }}">About Us</a></li>
+			</ul>
+		</nav>
+	</header>
+    <section class = "myservice">
+        <h1>Our Services</h1>
+    </section>
+	<main>
+		<section class="services">
+            <div class="container">
+                
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card">
+                    <h3>Brain Tumor Detection</h3>
+                    <p>Brain tumor detection is the process of identifying abnormal growths in the brain through the use of imaging techniques such as MRI or CT scans. Early detection is crucial for effective treatment and can involve a variety of tests and examinations to determine the type, size, and location of the tumor.</p>
+                    <a href="{{ url_for('serviceForward') }}" class="btn">Check now</a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card">
+                    <h3>Brain Tumor Clasiification</h3>
+                    <p>Brain tumor classification involves identifying the type of tumor by examining its cellular characteristics and location in the brain. This information helps determine the tumor's aggressiveness, treatment options. Classification is essential for developing an individualized treatment plan for each patient.</p>
+                    <a href="{{ url_for('serviceForwardSecond') }}" class="btn">Check now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+	</main>
+</body>
+</html>
+

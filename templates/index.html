@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Brain Tumor Detection and Clasiification</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='files/styles.css') }}" />
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+</head>
+<body>
+	<header>
+		<h1>Brain Tumor Detection and Classification</h1>
+		<nav>
+			<ul>
+				<li><a href="{{ url_for('index') }}">Home</a></li>
+				<li><a href="#sectionServices">Services</a></li>
+                <li><a href="{{ url_for('aboutus') }}">About Us</a></li> 
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="hero">
+			<h2>Early Detection is the Key</h2>
+			<p>Get screened for brain tumor early and increase your chances of survival.</p>
+		</section>
+        <section class="hero1">
+            <a href="{{ url_for('service') }}" class="cta">Check Now</a>
+        </section>
+		<section class="features">
+			<h2 id="sectionServices"></h2>
+			<ul>
+                <li>
+                    <h3>Brain Tumor Detection</h3>
+                    <p>Brain tumor detection is the identification of abnormal growths in the brain using imaging techniques.</p>
+                </li>
+                <li>
+                    <h3>Brain Tumor Clasiification</h3>
+                    <p>Brain tumor classification is the process of categorizing a tumor based on its cellular characteristics and location in the brain.</p>
+                </li>
+            </ul>
+		</section>
+	</main>
+	<footer>
+		<p>Brain Tumor Detection and Clasiification</p>
+	</footer>
+</body>
+</html>

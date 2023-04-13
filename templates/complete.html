@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='files/stylecomplete.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='files/stylecompletesecond.css') }}" />
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <title>Brain Tumor Detection and Classification</title>
+</head>
+
+<body>
+    <header>
+		<h1>Brain Tumor Result</h1>
+		<nav>
+			<ul>
+				<li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('aboutus') }}">About Us</a></li> 
+			</ul>
+		</nav>
+	</header>
+    <section class="services">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+            <div>
+                <h1 class="text">Result </h1>
+                <div class="container">
+                    <img class="displayImg" src="../images/{{ image_name }}" width="250" height="300">
+                    <h2 class="resultdisplay">Result : <span>{{ predvalue }}</span></h2>
+                </div>
+            </div>
+          </div>
+        </div>
+    </section>
+</body>
+</html>
